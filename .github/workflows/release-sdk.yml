@@ -1,7 +1,9 @@
 name: Release SDK
 
 # Publishes @keyvane/sdk to npm with provenance when a tag like sdk-v0.1.0 is pushed.
-# Requires an NPM_TOKEN repository secret with publish access to the @keyvane scope.
+# The first release uses an NPM_TOKEN repository secret (publish access to the @keyvane scope).
+# After it, add this workflow as a trusted publisher in the package settings on npmjs.com and
+# delete the secret: npm then authenticates the workflow with OIDC instead of a token.
 on:
   push:
     tags: ['sdk-v*']
@@ -20,6 +22,7 @@ jobs:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
           cache: npm
+      - run: npm install -g npm@11
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
