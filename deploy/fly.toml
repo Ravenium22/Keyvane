@@ -1,0 +1,34 @@
+# Fly.io example. Copy to the repository root as fly.toml, then:
+#   fly launch --no-deploy --copy-config
+#   fly volumes create keyvane_data --size 1
+#   fly secrets set KEYVANE_SECRET=...
+#   fly deploy
+app = "your-keyvane"
+primary_region = "fra"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  KEYVANE_PUBLIC_URL = "https://your-keyvane.fly.dev"
+  TRUST_PROXY = "true"
+  DATABASE_PATH = "/data/keyvane.db"
+
+[mounts]
+  source = "keyvane_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8787
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    path = "/healthz"
+    timeout = "5s"

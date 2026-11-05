@@ -1,0 +1,14 @@
+# Continuous SQLite replication with Litestream (https://litestream.io).
+# Run it next to Keyvane, e.g.:  litestream replicate -config deploy/litestream.yml
+# or wrap the server:              litestream replicate -exec "node --disable-warning=ExperimentalWarning apps/server/src/index.ts" -config deploy/litestream.yml
+# Restore on a new machine with:   litestream restore -config deploy/litestream.yml /data/keyvane.db
+dbs:
+  - path: /data/keyvane.db
+    replicas:
+      - type: s3
+        bucket: your-backup-bucket
+        path: keyvane
+        endpoint: https://s3.your-provider.example   # omit for AWS S3
+        region: auto
+        # Credentials come from LITESTREAM_ACCESS_KEY_ID and LITESTREAM_SECRET_ACCESS_KEY.
+        retention: 168h
