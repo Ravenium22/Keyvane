@@ -1,0 +1,18 @@
+{
+  "name": "pdf-analyzer-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Example: an AI PDF Analyzer monetized with Keyvane (plans, usage limits, Pro-only features, Stripe upgrades).",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env --conditions=development src/server.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@keyvane/sdk": "*",
+    "hono": "^4.13.16"
+  }
+}
