@@ -12,4 +12,4 @@ They are published at `/legal/privacy` and `/legal/terms` only when `KEYVANE_LEG
 | `{{url}}` | `KEYVANE_PUBLIC_URL` |
 | `{{updated}}` | `KEYVANE_LEGAL_UPDATED` (default: 2026-11-05) |
 
-Before publishing, also fill in the hosting provider and region in `privacy.md` (search for "TODO").
+The subprocessor list in `privacy.md` names the providers of the hosted service at keyvane.dev (Railway, Resend, Plausible). If you self-host, replace them with your own.

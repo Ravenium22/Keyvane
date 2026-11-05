@@ -32,7 +32,7 @@ Performance of our contract with you (providing Keyvane), our legitimate interes
 
 We do not sell personal data. We share it only with providers that help us run Keyvane, under contracts that protect it:
 
-- Hosting provider: TODO (name and region)
+- Hosting and database: Railway Corporation (application servers, database storage and backups)
 - Email delivery: Resend, Inc. (password-reset and alert emails), when enabled
 - Analytics: Plausible Insights OÜ (cookieless, public pages only), when enabled
 
@@ -40,11 +40,11 @@ We may disclose data when required by law.
 
 ## International transfers
 
-Keyvane is operated from the United States. Where data from the EU, UK or Türkiye is transferred, we rely on appropriate safeguards such as Standard Contractual Clauses.
+Our hosting and email providers process data in the United States and other countries. Where data from the EU, UK or Türkiye is transferred abroad, we rely on the safeguards those providers offer, such as Standard Contractual Clauses, and on the transfer mechanisms available under applicable law.
 
 ## Retention
 
-Account and project data are kept while your account exists. When you delete a customer, their licenses, devices, usage and history are deleted. When you delete a project or your account, all of its data is deleted. Backups are overwritten within 30 days.
+Account and project data are kept while your account exists. When you delete a customer, their licenses, devices, usage and history are deleted. When you delete a project or your account, all of its data is deleted. Deleted data can remain in backups for a limited period until those backups expire.
 
 ## Your rights
 
