@@ -6,7 +6,6 @@
 pip install keyvane
 ```
 
-Until the package is published to PyPI, install it from the repository: `pip install "git+https://github.com/Ravenium22/Keyvane.git#subdirectory=packages/python"`.
 
 ## Configure
 
