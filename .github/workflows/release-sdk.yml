@@ -1,9 +1,12 @@
 name: Release SDK
 
-# Publishes @keyvane/sdk to npm with provenance when a tag like sdk-v0.1.0 is pushed.
-# The first release uses an NPM_TOKEN repository secret (publish access to the @keyvane scope).
-# After it, add this workflow as a trusted publisher in the package settings on npmjs.com and
-# delete the secret: npm then authenticates the workflow with OIDC instead of a token.
+# Stages @keyvane/sdk on npm, with provenance, when a tag like sdk-v0.1.0 is pushed.
+# A maintainer then approves the staged version with 2FA on npmjs.com (Staged Packages)
+# or with `npm stage approve <id>`. Nothing reaches npm users without that approval.
+#
+# Authentication: an NPM_TOKEN repository secret with "Read and write (stage only)" access.
+# Once the package exists, add this workflow as a trusted publisher in the package settings
+# on npmjs.com and delete the secret: npm then authenticates the workflow with OIDC.
 on:
   push:
     tags: ['sdk-v*']
@@ -22,7 +25,7 @@ jobs:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
           cache: npm
-      - run: npm install -g npm@11
+      - run: npm install -g npm@11 && npm --version
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
@@ -31,6 +34,8 @@ jobs:
           VERSION=$(node -p "require('./packages/sdk/package.json').version")
           test "sdk-v$VERSION" = "$GITHUB_REF_NAME" || { echo "Tag $GITHUB_REF_NAME does not match version $VERSION"; exit 1; }
       - run: npm run build --workspace @keyvane/sdk
-      - run: npm publish --workspace @keyvane/sdk --access public --provenance
+      - name: Stage the release on npm
+        working-directory: packages/sdk
+        run: npm stage publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
