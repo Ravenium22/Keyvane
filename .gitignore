@@ -1,0 +1,27 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Python SDK build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+packages/python/build/
+
+# Local data (SQLite databases, generated secrets)
+.data/
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/

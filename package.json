@@ -1,0 +1,30 @@
+{
+  "name": "keyvane",
+  "private": true,
+  "description": "Keyvane — the monetization access layer for independent software products.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "examples/*"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "postinstall": "npm run build --workspace @keyvane/sdk --if-present",
+    "dev": "npm run dev --workspace @keyvane/server",
+    "start": "npm run start --workspace @keyvane/server",
+    "build": "npm run build --workspace @keyvane/sdk",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "check": "npm run typecheck && npm run test",
+    "seed:demo": "npm run seed:demo --workspace @keyvane/server",
+    "stripe:simulate": "npm run stripe:simulate --workspace @keyvane/server --",
+    "admin": "npm run admin --workspace @keyvane/server --"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "5.9.3"
+  }
+}
