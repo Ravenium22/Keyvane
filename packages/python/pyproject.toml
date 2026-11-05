@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyvane"
+version = "0.1.0"
+description = "Python SDK for Keyvane: license keys, plans, feature access and usage limits, synced with Stripe."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["licensing", "license-keys", "entitlements", "usage-limits", "stripe", "saas"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ravenium22/keyvane"
+Documentation = "https://github.com/Ravenium22/keyvane/blob/main/docs/python.md"
+Source = "https://github.com/Ravenium22/keyvane/tree/main/packages/python"
+Issues = "https://github.com/Ravenium22/keyvane/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+keyvane = ["py.typed"]
