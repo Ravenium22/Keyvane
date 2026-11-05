@@ -1,6 +1,6 @@
 {
   "name": "@keyvane/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official JavaScript/TypeScript SDK for Keyvane — licenses, entitlements and usage limits for indie software.",
   "license": "MIT",
   "type": "module",
@@ -10,7 +10,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "development": "./src/index.ts",
+      "keyvane-source": "./src/index.ts",
       "default": "./dist/index.js"
     },
     "./package.json": "./package.json"
@@ -32,6 +32,8 @@
     "saas",
     "indie-hackers"
   ],
+  "homepage": "https://keyvane.dev/docs/sdk",
+  "bugs": "https://github.com/Ravenium22/Keyvane/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ravenium22/Keyvane.git",

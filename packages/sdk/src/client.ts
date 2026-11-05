@@ -12,7 +12,7 @@ import type {
   UsageResult,
 } from './types.ts';
 
-export const VERSION = '0.1.0';
+export const VERSION = '0.1.1';
 
 export interface KeyvaneOptions {
   /**
@@ -82,7 +82,7 @@ export class Keyvane {
       throw new KeyvaneError('Missing API key. Pass `apiKey` or set KEYVANE_SECRET_KEY (server) / KEYVANE_PUBLISHABLE_KEY (apps).');
     }
     if (!baseUrl) {
-      throw new KeyvaneError('Missing base URL. Pass `baseUrl` (e.g. https://keyvane.example.com) or set KEYVANE_URL.');
+      throw new KeyvaneError('Missing base URL. Pass `baseUrl` (e.g. https://keyvane.dev) or set KEYVANE_URL.');
     }
     const fetchImpl = options.fetch ?? (typeof fetch === 'function' ? fetch.bind(globalThis) : undefined);
     if (!fetchImpl) throw new KeyvaneError('No fetch implementation found. Use Node.js 18+ or pass `fetch`.');

@@ -7,7 +7,7 @@
   "type": "module",
   "bin": { "pdf-tool": "src/cli.ts" },
   "scripts": {
-    "cli": "node --env-file-if-exists=.env --conditions=development src/cli.ts",
+    "cli": "node --env-file-if-exists=.env --conditions=keyvane-source src/cli.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {

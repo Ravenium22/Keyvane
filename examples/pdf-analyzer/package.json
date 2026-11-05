@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "node --watch --env-file-if-exists=.env --conditions=development src/server.ts",
+    "dev": "node --watch --env-file-if-exists=.env --conditions=keyvane-source src/server.ts",
     "start": "node --env-file-if-exists=.env src/server.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },

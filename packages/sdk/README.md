@@ -17,7 +17,7 @@ import { Keyvane } from '@keyvane/sdk';
 
 const keyvane = new Keyvane({
   apiKey: process.env.KEYVANE_SECRET_KEY, // kv_sk_…
-  baseUrl: process.env.KEYVANE_URL,       // your Keyvane deployment
+  baseUrl: process.env.KEYVANE_URL,       // https://keyvane.dev, or your self-hosted URL
 });
 
 await keyvane.customers.upsert({ externalId: user.id, email: user.email });
@@ -38,7 +38,7 @@ if (!usage.allowed) console.log(usage.code, usage.message); // 'limit_exceeded',
 ## Desktop apps and CLIs: license keys
 
 ```ts
-const keyvane = new Keyvane({ apiKey: 'kv_pk_…', baseUrl: 'https://keyvane.example.com' }); // publishable key
+const keyvane = new Keyvane({ apiKey: 'kv_pk_…', baseUrl: 'https://keyvane.dev' }); // publishable key
 
 const result = await keyvane.licenses.activate({ key, fingerprint: machineId, name: 'Studio Mac' });
 if (result.valid && result.entitlements?.can('export')) {
