@@ -1,0 +1,16 @@
+{
+  "name": "license-cli-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Example: a CLI / desktop-style app that unlocks features with a Keyvane license key and device activations.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "pdf-tool": "src/cli.ts" },
+  "scripts": {
+    "cli": "node --env-file-if-exists=.env --conditions=development src/cli.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@keyvane/sdk": "*"
+  }
+}
