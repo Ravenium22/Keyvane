@@ -119,7 +119,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): Config {
     secret,
     trustProxy: envBool(env.TRUST_PROXY, false),
     signupsEnabled: envBool(env.SIGNUPS_ENABLED, true),
-    githubUrl: env.KEYVANE_GITHUB_URL || 'https://github.com/Ravenium22/keyvane',
+    githubUrl: env.KEYVANE_GITHUB_URL || 'https://github.com/Ravenium22/Keyvane',
     contactEmail: env.KEYVANE_CONTACT_EMAIL || null,
     legalEntity: env.KEYVANE_LEGAL_ENTITY || null,
     legalJurisdiction: env.KEYVANE_LEGAL_JURISDICTION || 'the State of Delaware, United States',

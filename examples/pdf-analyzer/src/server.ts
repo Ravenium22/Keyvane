@@ -79,7 +79,7 @@ const layout = (body: unknown, flash?: string | null) => html`<!doctype html>
   input[type=text] { font: inherit; padding: 8px 10px; border: 1px solid var(--b); border-radius: 8px; }
 </style></head>
 <body>${flash ? html`<div class="flash">${flash}</div>` : ''}${body}
-<p class="small muted" style="margin-top:32px">Example app · monetized with <a href="https://github.com/Ravenium22/keyvane">Keyvane</a></p>
+<p class="small muted" style="margin-top:32px">Example app · monetized with <a href="https://github.com/Ravenium22/Keyvane">Keyvane</a></p>
 </body></html>`;
 
 const takeFlash = (c: Context) => {

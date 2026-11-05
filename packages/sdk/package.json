@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ravenium22/keyvane.git",
+    "url": "git+https://github.com/Ravenium22/Keyvane.git",
     "directory": "packages/sdk"
   },
   "engines": {

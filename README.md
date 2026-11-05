@@ -1,6 +1,6 @@
 # Keyvane
 
-[![CI](https://github.com/Ravenium22/keyvane/actions/workflows/ci.yml/badge.svg)](https://github.com/Ravenium22/keyvane/actions/workflows/ci.yml)
+[![CI](https://github.com/Ravenium22/Keyvane/actions/workflows/ci.yml/badge.svg)](https://github.com/Ravenium22/Keyvane/actions/workflows/ci.yml)
 [![SDK: MIT](https://img.shields.io/badge/SDK-MIT-0f766e)](packages/sdk/LICENSE)
 [![Platform: FSL-1.1-MIT](https://img.shields.io/badge/platform-FSL--1.1--MIT-c2410c)](apps/server/LICENSE)
 [![Node.js 22.18+](https://img.shields.io/badge/node-%E2%89%A522.18-15151c)](.nvmrc)
@@ -37,7 +37,7 @@ Keyvane is not a payment processor or Merchant of Record. Stripe keeps charging 
 Requires Node.js 22.18+.
 
 ```bash
-git clone https://github.com/Ravenium22/keyvane.git && cd Keyvane
+git clone https://github.com/Ravenium22/Keyvane.git && cd Keyvane
 npm install
 npm run seed:demo     # demo account, project, API keys and example .env files
 npm run dev           # http://localhost:8787 (log in with the printed credentials)

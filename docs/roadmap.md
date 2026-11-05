@@ -1,6 +1,6 @@
 # Roadmap
 
-Keyvane is built in three phases. Priorities change with feedback from developers who use it, so [open an issue](https://github.com/Ravenium22/keyvane/issues) if something here matters to you.
+Keyvane is built in three phases. Priorities change with feedback from developers who use it, so [open an issue](https://github.com/Ravenium22/Keyvane/issues) if something here matters to you.
 
 ## Phase 1: MVP ✅
 

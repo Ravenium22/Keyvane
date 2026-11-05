@@ -22,10 +22,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Ravenium22/keyvane"
-Documentation = "https://github.com/Ravenium22/keyvane/blob/main/docs/python.md"
-Source = "https://github.com/Ravenium22/keyvane/tree/main/packages/python"
-Issues = "https://github.com/Ravenium22/keyvane/issues"
+Homepage = "https://github.com/Ravenium22/Keyvane"
+Documentation = "https://github.com/Ravenium22/Keyvane/blob/main/docs/python.md"
+Source = "https://github.com/Ravenium22/Keyvane/tree/main/packages/python"
+Issues = "https://github.com/Ravenium22/Keyvane/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,6 +1,6 @@
 # @keyvane/sdk
 
-The official JavaScript/TypeScript SDK for [Keyvane](https://github.com/Ravenium22/keyvane), the monetization access layer for independent software: licenses, plans, feature access and usage limits, kept in sync with Stripe.
+The official JavaScript/TypeScript SDK for [Keyvane](https://github.com/Ravenium22/Keyvane), the monetization access layer for independent software: licenses, plans, feature access and usage limits, kept in sync with Stripe.
 
 - Zero dependencies, ESM, TypeScript types included
 - Node.js 18+, Bun, Deno, edge runtimes and browsers (with a publishable key)
@@ -48,9 +48,9 @@ if (result.valid && result.entitlements?.can('export')) {
 
 ## Documentation
 
-- [SDK reference](https://github.com/Ravenium22/keyvane/blob/main/docs/sdk.md)
-- [Quickstart](https://github.com/Ravenium22/keyvane/blob/main/docs/getting-started.md)
-- [REST API](https://github.com/Ravenium22/keyvane/blob/main/docs/api-reference.md)
+- [SDK reference](https://github.com/Ravenium22/Keyvane/blob/main/docs/sdk.md)
+- [Quickstart](https://github.com/Ravenium22/Keyvane/blob/main/docs/getting-started.md)
+- [REST API](https://github.com/Ravenium22/Keyvane/blob/main/docs/api-reference.md)
 
 ## License
 

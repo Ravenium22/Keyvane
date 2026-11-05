@@ -12,7 +12,7 @@ You need **Node.js 22.18 or newer**.
 ## 1. Run Keyvane
 
 ```bash
-git clone https://github.com/Ravenium22/keyvane.git
+git clone https://github.com/Ravenium22/Keyvane.git
 cd Keyvane
 npm install
 npm run seed:demo   # creates a demo account, project, API keys and example .env files

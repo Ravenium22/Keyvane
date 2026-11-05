@@ -1,6 +1,6 @@
 # keyvane (Python)
 
-Python SDK for [Keyvane](https://github.com/Ravenium22/keyvane): license keys, plans, feature access and usage limits for software you sell, kept in sync with Stripe. Standard library only; Python 3.9+.
+Python SDK for [Keyvane](https://github.com/Ravenium22/Keyvane): license keys, plans, feature access and usage limits for software you sell, kept in sync with Stripe. Standard library only; Python 3.9+.
 
 ```bash
 pip install keyvane
@@ -22,4 +22,4 @@ if not usage["allowed"]:
     return {"error": usage["message"]}, 402
 ```
 
-Full documentation: [docs/python.md](https://github.com/Ravenium22/keyvane/blob/main/docs/python.md). MIT licensed.
+Full documentation: [docs/python.md](https://github.com/Ravenium22/Keyvane/blob/main/docs/python.md). MIT licensed.
