@@ -1,0 +1,22 @@
+{
+  "name": "@keyvane/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Keyvane platform: dashboard, REST API, entitlement engine and Stripe sync.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/index.ts",
+    "start": "node --disable-warning=ExperimentalWarning src/index.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-reporter=spec \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "seed:demo": "node --disable-warning=ExperimentalWarning scripts/seed-demo.ts",
+    "stripe:simulate": "node --disable-warning=ExperimentalWarning scripts/simulate-stripe.ts",
+    "admin": "node --disable-warning=ExperimentalWarning scripts/admin.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "hono": "^4.13.16",
+    "marked": "^18.1.3"
+  }
+}
