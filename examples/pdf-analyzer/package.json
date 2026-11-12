@@ -13,6 +13,6 @@
   "dependencies": {
     "@hono/node-server": "^2.1.6",
     "@keyvane/sdk": "*",
-    "hono": "^4.13.16"
+    "hono": "^4.13.17"
   }
 }
